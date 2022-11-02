@@ -244,6 +244,7 @@ margin-bottom: 60px;
     letter-spacing: 5px;
     text-decoration: none;
     color: #000000;
+    font-size: 20px;
 }
 .next:hover{
     color: rgb(64, 132, 146);
