@@ -1,0 +1,328 @@
+.container {
+    min-width: 1200px;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: tsukushioldmincho, 'ms mincho', 'ヒラギノ明朝 pro w3', 'hiragino mincho pro', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    display: flex;
+    background-color: rgb(64, 132, 146);
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+footer {
+
+    padding: 15px;
+    background-color: rgba(64, 132, 146);
+}
+
+.footer-up {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-text-box {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    
+}
+
+.footer-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.footer-icon-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-icon {
+    width: 30px;
+    margin: 0 20px;
+}
+
+.footer-under {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo-box {
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.logo {
+    width: 200px;
+    display: flex;
+    height:100px ;
+}
+
+.fuction-box {
+    background-color: rgb(64, 132, 146);
+    width: 700px;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2.5px solid #ffffff;
+}
+
+
+.fun-box {
+    background-color: rgb(64, 132, 146);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fun-box:hover {
+    border-top: 2.5px solid #fff;
+}
+
+.fun-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: 10px;
+    margin-left: 10px;
+}
+.Bulletin-Board-box {
+
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bulletin-Board-title {
+    width: 150px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+    border-left: 5px solid #00376d;
+    border-right: 5px solid #00376d;
+    margin: 20px 0;
+    padding-left: 5px;
+
+}
+
+.Bulletin-Board-text {
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-align: left;
+    margin: 20px 0;
+    line-height: 30px;
+    text-shadow: none;
+    color: #74B5c2;
+    font-weight: bold;
+
+}
+
+.intr-box {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px 30px 50px 30px;
+    background:linear-gradient(to left,#000 0%, rgb(64, 132, 146) 100%);
+}
+
+.intr-box-content {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.intr-box-left {
+    margin-left: 100px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.intr-icon {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: -36px 36px 21px rgba(255, 255, 255, 0.552);
+}
+
+
+.intr-box-rightup {
+    display: flex;
+    justify-content: center;
+}
+
+.intr-name {
+    color: #ffffff;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 64px;
+    letter-spacing: 10px;
+    padding: 20px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    margin-right: 500px;
+    text-align: left;
+    font-weight: bold;
+}
+.intr-txt{
+    color: #ffffff;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 20px;
+    letter-spacing: 10px;
+    padding: 20px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    text-align: left;
+}
+.intr-box-rightunder {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+
+}
+
+.intr-contact-name {
+    margin-left: 200px;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 5px;
+    padding: 30px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.intr-title {
+    color: rgb(255, 255, 255);
+    width: 180px;
+    font-family: 'Zen Antique', serif;
+    font-size: 30px;
+    letter-spacing: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    border-left: 5px solid #fff;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2.5px solid #fff;
+}
+
+
+.icon {
+    background-color: #ffffff;
+    width: 50px;
+    margin: 10px 20px;
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 50%;
+    transition-duration:0.5s;
+}
+
+.icon:hover{
+margin:0 20px 20px 20px;
+box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
+}
+
+.work-box {
+    margin: 60px 20px;
+    padding: 30px 30px 30px 30px;
+    background:linear-gradient(to right,#000 0%, rgb(64, 132, 146) 100%);
+    justify-content: right;
+
+}
+
+.work-title {
+    color: rgb(255, 255, 255);
+    width: 180px;
+    font-family: 'Zen Antique', serif;
+    font-size: 30px;
+    letter-spacing: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    border-left: 5px solid #fff;
+}
+
+.work-box-box {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.work {
+    width: 350px;
+    transition-duration:0.5s; 
+    height:433.35px;
+}
+
+.work:hover{
+    width:400px; 
+    height:494px;
+    box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
+}
+
+.more-outerbox {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.more-box {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+.more-box:hover{    
+    background-color: rgb(255, 255, 255, 50%);
+}
+.more {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: #000000;
+}
+.more:hover{
+    color: rgb(255, 255, 255);
+}
