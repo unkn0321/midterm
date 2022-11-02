@@ -246,12 +246,15 @@ footer {
 .icon {
     background-color: #ffffff;
     width: 50px;
-    margin: 0 20px;
+    margin: 10px 20px;
     border: 2px solid #ffffff;
     padding: 5px;
     border-radius: 50%;
 }
 
+.icon:hover{
+margin:0 20px 20px 20px;
+}
 
 .work-box {
     margin: 60px 20px;
