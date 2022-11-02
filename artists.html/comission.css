@@ -131,7 +131,7 @@ footer {
 .comission-majortitle {
     color: rgb(64, 132, 146);
     font-family: 'Zen Antique', serif;
-    font-size: 48px;
+    font-size: 300%;
     letter-spacing: 5px;
     padding: 15px;
     padding-left: 20px;
@@ -140,7 +140,7 @@ footer {
 }
 
 .comission-majortext {
-    font-size: 24px;
+    font-size: 150%;
     letter-spacing: 5px;
     line-height: 30px;
     color: #74B5c2;
@@ -159,7 +159,7 @@ footer {
 
 .minortitle {
     color: rgb(64, 132, 146);
-    font-size: 32px;
+    font-size: 200%;
     letter-spacing: 5px;
     font-weight: bold;
     padding-top: 150px;
@@ -168,7 +168,7 @@ footer {
 
 .minortext {
     padding-top: 30px;
-    font-size: 24px;
+    font-size: 150%;
     letter-spacing: 5px;
     line-height: 40px;
     color: #39a7bd;
