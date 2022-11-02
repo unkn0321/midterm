@@ -188,7 +188,7 @@ margin-bottom: 60px;
 .style-des-title {
     color: rgb(64, 132, 146);
     background-color: rgb(255, 255, 255);
-    font-size: 24px;
+    font-size: 150%;
     font-weight: bold;
     letter-spacing: 5px;
     padding: 10px;
@@ -204,7 +204,7 @@ margin-bottom: 60px;
    
     color: #2B586E;
     line-height: 46px;
-    font-size: 20px;
+    font-size: 125%;
     letter-spacing: 5px;
     font-weight: bold;
     padding:15px 30px;
@@ -213,7 +213,7 @@ margin-bottom: 60px;
 .style-des-st{
 
     color:rgb(47, 97, 107);
-    font-size: 20px;
+    font-size: 125%;
     letter-spacing: 5px;
     font-weight: bold;
     padding:15px;
