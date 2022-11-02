@@ -172,9 +172,10 @@ footer {
 
 .intr-icon {
     width: 350px;
+    height: 350px;
     border-radius: 50%;
+    box-shadow: -36px 36px 21px rgba(255, 255, 255, 0.552);
 }
-
 
 
 .intr-box-rightup {
