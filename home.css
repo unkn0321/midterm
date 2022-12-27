@@ -35,7 +35,7 @@ footer {
     display: flex;
     flex-direction: column;
     line-height: 20px;
-    
+
 }
 
 .footer-text {
@@ -75,14 +75,18 @@ footer {
 .logo {
     width: 200px;
     display: flex;
-    height:100px ;
+    height: 100px;
+}
+
+nav {
+    display: none;
 }
 
 .fuction-box {
     background-color: rgb(64, 132, 146);
     width: 700px;
     padding-left: 20px;
-    padding-right:20px;
+    padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 10px;
     margin-top: 10px;
@@ -113,6 +117,7 @@ footer {
     letter-spacing: 10px;
     margin-left: 10px;
 }
+
 .Bulletin-Board-box {
 
     margin-left: 20px;
@@ -154,7 +159,7 @@ footer {
     margin-left: 20px;
     margin-right: 20px;
     padding: 30px 30px 50px 30px;
-    background:linear-gradient(to left,#000 0%, rgb(64, 132, 146) 100%);
+    background: linear-gradient(to left, #000 0%, rgb(64, 132, 146) 100%);
 }
 
 .intr-box-content {
@@ -177,6 +182,9 @@ footer {
     box-shadow: -36px 36px 21px rgba(255, 255, 255, 0.552);
 }
 
+.intr-box-right {
+    text-align: left;
+}
 
 .intr-box-rightup {
     display: flex;
@@ -191,11 +199,10 @@ footer {
     padding: 20px;
     padding-left: 30px;
     margin-bottom: 20px;
-    margin-right: 500px;
-    text-align: left;
     font-weight: bold;
 }
-.intr-txt{
+
+.intr-txt {
     color: #ffffff;
     font-family: 'Zen Maru Gothic', sans-serif;
     font-size: 20px;
@@ -206,6 +213,7 @@ footer {
     margin-right: 50px;
     text-align: left;
 }
+
 .intr-box-rightunder {
     display: flex;
     justify-content: space-around;
@@ -214,7 +222,6 @@ footer {
 }
 
 .intr-contact-name {
-    margin-left: 200px;
     color: #fff;
     font-size: 24px;
     letter-spacing: 5px;
@@ -243,6 +250,11 @@ footer {
     border-bottom: 2.5px solid #fff;
 }
 
+.icon-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .icon {
     background-color: #ffffff;
@@ -251,18 +263,18 @@ footer {
     border: 2px solid #ffffff;
     padding: 5px;
     border-radius: 50%;
-    transition-duration:0.5s;
+    transition-duration: 0.5s;
 }
 
-.icon:hover{
-margin:0 20px 20px 20px;
-box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
+.icon:hover {
+    margin: 0 20px 20px 20px;
+    box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
 }
 
 .work-box {
     margin: 60px 20px;
     padding: 30px 30px 30px 30px;
-    background:linear-gradient(to right,#000 0%, rgb(64, 132, 146) 100%);
+    background: linear-gradient(to right, #000 0%, rgb(64, 132, 146) 100%);
     justify-content: right;
 
 }
@@ -289,13 +301,13 @@ box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
 
 .work {
     width: 350px;
-    transition-duration:0.5s; 
-    height:433.35px;
+    transition-duration: 0.5s;
+    height: 433.35px;
 }
 
-.work:hover{
-    width:400px; 
-    height:494px;
+.work:hover {
+    width: 400px;
+    height: 494px;
     box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
 }
 
@@ -313,9 +325,11 @@ box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
     justify-content: center;
     border-radius: 30px;
 }
-.more-box:hover{    
+
+.more-box:hover {
     background-color: rgb(255, 255, 255, 50%);
 }
+
 .more {
     font-size: 20px;
     font-weight: bold;
@@ -323,9 +337,24 @@ box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
     text-decoration: none;
     color: #000000;
 }
-.more:hover{
+
+.more:hover {
     color: rgb(255, 255, 255);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:768px) {
     .container {
         min-width: 480px;
@@ -391,12 +420,14 @@ box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
         height: 100px;
     }
 
+    nav {
+        display: none;
+    }
+
     .fuction-box {
         background-color: rgb(64, 132, 146);
-        width: 700px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 20px;
+        width: 300px;
+        padding: 0;
         padding-bottom: 10px;
         margin-top: 10px;
         margin-bottom: 20px;
@@ -419,12 +450,13 @@ box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
     }
 
     .fun-text {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: bold;
         color: rgb(255, 255, 255);
         text-decoration: none;
         letter-spacing: 10px;
         margin-left: 10px;
+        padding-left: 10px;
     }
 
     .Bulletin-Board-box {
@@ -468,9 +500,7 @@ box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
     }
 
     .intr-box-content {
-
         display: flex;
-        justify-content: space-between;
     }
 
     .intr-box-left {
@@ -481,8 +511,8 @@ box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
     }
 
     .intr-icon {
-        width: 250px;
-        height: 250px;
+        max-width: 250px;
+        max-height: 250px;
         border-radius: 50%;
         box-shadow: -18px 18px 21px rgba(255, 255, 255, 0.552);
     }
@@ -504,18 +534,18 @@ box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
     }
 
     .intr-box-right {
-        max-width: 400px;
+        text-align: left;
     }
 
     .intr-box-rightunder {
+        width: auto;
         display: flex;
         justify-content: space-around;
-        padding-top: 100px;
-
+        padding-top: 25px;
     }
 
     .intr-contact-name {
-        margin-left: 50px;
+        margin-left: 0;
         color: #fff;
         font-size: 24px;
         letter-spacing: 5px;
@@ -527,7 +557,7 @@ box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
 
     .intr-title {
         color: rgb(255, 255, 255);
-        width: 180px;
+        width: auto;
         font-family: 'Zen Antique', serif;
         font-size: 30px;
         letter-spacing: 10px;
@@ -538,17 +568,26 @@ box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
     }
 
     .contact-box {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2.5px solid #fff;
+    }
+
+    .icon-box {
+        width: auto;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        border-bottom: 2.5px solid #fff;
     }
 
 
     .icon {
         background-color: #ffffff;
-        max-width: 50px;
-        margin: 0 10px;
+        width: 40%;
+        height: auto;
+        margin: 0 10x;
         border: 2px solid #ffffff;
         padding: 5px;
         border-radius: 50%;
@@ -583,19 +622,18 @@ box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
     .work-box-box {
         display: flex;
         margin-top: 50px;
-        justify-content: space-between;
-        margin-left: 30px;
-        margin-right: 30px;
+        justify-content: space-around;
+        margin: 0, 20px;
     }
 
     .work {
-        width: 100px;
+        width: 100%;
         transition-duration: 0.5s;
-        height: auto;
+        height: 200px;
     }
 
     .work:hover {
-        width: 150px;
+        width: 120%;
         height: auto;
         box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
     }
@@ -631,6 +669,17 @@ box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
         color: rgb(255, 255, 255);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media(max-width:480px) {
@@ -698,18 +747,29 @@ box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
         height: 100px;
     }
 
+    nav {
+        display: block
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .nav_menu {
+        font-size: 2em;
+        position: absolute;
+        padding: 0 15px;
+    }
+
+    .checkbox {
+        display: none;
+    }
+
+
+
+
     .fuction-box {
-        background-color: rgb(64, 132, 146);
-        width: 700px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 20px;
-        padding-bottom: 10px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 2.5px solid #ffffff;
+        display: none;
     }
 
 
@@ -793,6 +853,10 @@ box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
         height: 250px;
         border-radius: 50%;
         box-shadow: -18px 18px 21px rgba(255, 255, 255, 0.552);
+    }
+
+    .intr-box-right {
+        text-align: left;
     }
 
     .intr-name {
