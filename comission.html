@@ -12,7 +12,21 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="/home.js"></script>
 </head>
-
+<button type="button" id="BackTop" class="toTop-arrow"></button>
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 222);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+</script>
 <body class="container">
     <header>
         <div class="logo-box">
