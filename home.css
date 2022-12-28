@@ -1,3 +1,4 @@
+/*電腦排版*/
 .container {
     min-width: 1200px;
     background-color: rgb(255, 255, 255);
@@ -91,9 +92,7 @@ ul {
     display: none;
 }
 
-.checkbox {
-    display: none;
-}
+
 
 
 
@@ -362,7 +361,7 @@ ul {
 
 
 
-
+/*平板排版*/
 
 
 
@@ -439,17 +438,17 @@ ul {
     nav {
         display: none;
     }
-    
+
     ul {
         list-style: none;
         display: none;
     }
-    
+
     .nav_menu {
         display: none;
     }
-    
-    
+
+
 
     .fuction-box {
         background-color: rgb(64, 132, 146);
@@ -649,8 +648,9 @@ ul {
     .work-box-box {
         display: flex;
         margin-top: 50px;
-        justify-content: space-around;
+        justify-content: left;
         margin: 0, 20px;
+        flex-wrap: wrap;
     }
 
     .work {
@@ -701,7 +701,7 @@ ul {
 
 
 
-
+/*手機排版*/
 
 
 
@@ -744,7 +744,7 @@ ul {
     }
 
     .footer-text {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: bold;
         text-align: left;
         letter-spacing: 10px;
@@ -756,12 +756,12 @@ ul {
     }
 
     .footer-icon {
-        width: 50px;
-        margin: 0 20px;
+        width: 30px;
+        margin: 0 10px;
     }
 
     .footer-under {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .logo-box {
@@ -786,7 +786,8 @@ ul {
     }
 
     .nav_menu {
-        font-size: 2em;
+        margin-top: 20px;
+        font-size: 4em;
         padding: 0 15px;
         display: block;
         color: #fff;
@@ -800,13 +801,13 @@ ul {
         display: block;
         background-color: rgba(64, 132, 146);
         margin: 0;
-        padding:5px 0;
+        padding: 5px 0;
         border-top: 2.5px solid rgb(0, 0, 0);
     }
 
-li{
-    padding:5px 0;
-}
+    li {
+        padding: 5px 0;
+    }
 
 
     .fuction-box {
@@ -870,7 +871,7 @@ li{
     }
 
     .intr-box {
-        margin:0 5px;
+        margin: 0 5px;
         padding: 30px 30px 50px 30px;
         background: linear-gradient(to left, #000 0%, rgb(64, 132, 146) 100%);
     }
@@ -969,18 +970,17 @@ li{
     }
 
     .work-box {
-        margin: 60px 20px;
+        margin: 10px 5px;
         padding: 30px 30px 30px 30px;
         background: linear-gradient(to right, #000 0%, rgb(64, 132, 146) 100%);
         justify-content: right;
-
     }
 
     .work-title {
         color: rgb(255, 255, 255);
         width: 180px;
         font-family: 'Zen Antique', serif;
-        font-size: 30px;
+        font-size: 24px;
         letter-spacing: 10px;
         padding: 20px;
         margin-bottom: 20px;
@@ -994,6 +994,7 @@ li{
         margin-top: 50px;
         margin-left: 30px;
         margin-right: 30px;
+        align-items: center;
     }
 
     .work {
@@ -1010,7 +1011,7 @@ li{
 
     .more-outerbox {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .more-box {
