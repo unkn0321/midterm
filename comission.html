@@ -9,6 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artist's Journal</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="/home.js"></script>
 </head>
 
 <body class="container">
@@ -20,6 +22,10 @@
                 </a>
             </div>
         </div>
+        <nav>
+            <label class="nav_menu " for="switch">&#9776</label><!--漢堡按鈕圖示-->
+        </nav>
+
         <div class="fuction-box">
 
             <div class="fun-box">
@@ -40,6 +46,20 @@
 
         </div>
     </header>
+    <ul class="menu"><!--選單內容-->
+        <li>
+            <a href="index.html" class="fun-text">
+                首頁
+            </a>
+        </li>
+        <li><a href="comission-cate.html" class="fun-text">
+                委託類別
+            </a></li>
+        <li><a href="comission.html" class="fun-text">
+                委託須知
+            </a></li>
+    </ul>
+
     <div class="comission-box">
         <div class="comission-major">
             <div class="comission-majortitle">
@@ -56,9 +76,7 @@
                     1. 採不朔既往原則
                 </div>
                 <div class="minortext">
-                    每單委託所適用的規則為交易成立當下(確認已繳畢訂金)的規則，<br>
-                    若在交件前規則有產生更改，<br>
-                    該單委託則繼續使用更改前的規則而非更改後的規則。<br>
+                    每單委託所適用的規則為交易成立當下(確認已繳畢訂金)的規則，若在交件前規則有產生更改，該單委託則繼續使用更改前的規則而非更改後的規則。<br>
                 </div>
             </div>
             <div class="minorbox">
@@ -68,7 +86,7 @@
             </div>
             <div class="minorbox">
                 <div class="minortitle">
-                    3. 若要將其發布在公開平台上，請務必要附上我的暱稱或<br>&nbsp&nbsp&nbsp任何一支繪帳的ID
+                    3. 若要將其發布在公開平台上，請務必要附上我的暱稱或任何一支繪帳的ID
                 </div>
             </div>
             <div class="minorbox">
@@ -104,7 +122,7 @@
             </div>
             <div class="minorbox">
                 <div class="minortitle">
-                    8. 非商業委託在未告知的前提下用於商業用途會公開黑單<br>&nbsp&nbsp&nbsp&要求加錢
+                    8. 非商業委託在未告知的前提下用於商業用途會公開黑單&要求加錢
                 </div>
                 <div class="minortext">
                     情節嚴重者會走法律途徑。<br>
@@ -113,7 +131,7 @@
             </div>
             <div class="minorbox">
                 <div class="minortitle">
-                    9. 金額款項逾10日未繳清會先告知，告知後3日視同棄單<br>&nbsp&nbsp&nbsp且會公開黑單處理
+                    9. 金額款項逾10日未繳清會先告知，告知後3日視同棄單且會公開黑單處理
                 </div>
                 <div class="minortext">
                     如有特殊原因無法在期限內繳清者請務必告知。
@@ -121,7 +139,7 @@
             </div>
             <div class="minorbox">
                 <div class="minortitle">
-                    10.不接經查發現有不良紀錄(如被列入過黑名單)經歷者<br>&nbsp&nbsp&nbsp之委託
+                    10.不接經查發現有不良紀錄(如被列入過黑名單)經歷者之委託
                 </div>
                 <div class="minortext">
                     除非對方可提供誠信與復發補償依據。
@@ -139,7 +157,7 @@
             </div>
             <div class="minorbox">
                 <div class="minortitle">
-                    12.可能會根據角色數多寡、背景有無與複雜度、角色外觀<br>&nbsp&nbsp&nbsp複雜度來向上調整價錢
+                    12.可能會根據角色數多寡、背景有無與複雜度、角色外觀複雜度來向上調整價錢
                 </div>
             </div>
             <div class="minorbox">
@@ -152,7 +170,7 @@
             </div>
             <div class="minorbox">
                 <div class="minortitle">
-                    14.若繪者於委託中途遭遇不可抗力因素致使委託工期延<br>&nbsp&nbsp&nbsp長，會以委託人可行的聯繫管道告知
+                    14.若繪者於委託中途遭遇不可抗力因素致使委託工期延長，會以委託人可行的聯繫管道告知
                 </div>
                 <div class="minortext">
                     無法接受延期者可提出棄單，<br>
@@ -162,7 +180,7 @@
             </div>
             <div class="minorbox">
                 <div class="minortitle">
-                    15.若個別委託類型內所提及之規範內容與委託須知相衝，<br>&nbsp&nbsp&nbsp則以該委託類型內所提及之規範內容為準
+                    15.若個別委託類型內所提及之規範內容與委託須知相衝，則以該委託類型內所提及之規範內容為準
                 </div>
                 <div class="minortext">
                     若仍有疑義可私訊再議。
@@ -170,7 +188,7 @@
             </div>
             <div class="minorbox">
                 <div class="minortitle">
-                    16.訂金為確認委託內容&價格階段完成後所定下的總價的<br>&nbsp&nbsp&nbsp一半
+                    16.訂金為確認委託內容&價格階段完成後所定下的總價的一半
                 </div>
                 <div class="minortext">
                     若有特殊原因無法以此比例支付可私訊另議。
@@ -178,7 +196,7 @@
             </div>
             <div class="minorbox">
                 <div class="minortitle">
-                    17.採用非現金之交易途徑者(圖換圖、物換圖)不限於此網<br>&nbsp&nbsp&nbsp站所列之委託類型限制
+                    17.採用非現金之交易途徑者(圖換圖、物換圖)不限於此網站所列之委託類型限制
                 </div>
                 <div class="minortext">
                     也可以委沒有在這裡列出但我在公開平台有釋出過的作品類型，此情況者私訊詳談。
