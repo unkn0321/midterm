@@ -449,9 +449,7 @@ ul {
         display: none;
     }
     
-    .checkbox {
-        display: none;
-    }
+    
 
     .fuction-box {
         background-color: rgb(64, 132, 146);
@@ -588,9 +586,9 @@ ul {
         color: rgb(255, 255, 255);
         width: auto;
         font-family: 'Zen Antique', serif;
-        font-size: 30px;
+        font-size: 24px;
         letter-spacing: 10px;
-        padding: 20px;
+        padding: 10px;
         margin-bottom: 20px;
         text-align: left;
         border-left: 5px solid #fff;
@@ -640,9 +638,9 @@ ul {
         color: rgb(255, 255, 255);
         width: 180px;
         font-family: 'Zen Antique', serif;
-        font-size: 30px;
+        font-size: 24px;
         letter-spacing: 10px;
-        padding: 20px;
+        padding: 10px;
         margin-bottom: 20px;
         text-align: left;
         border-left: 5px solid #fff;
@@ -662,8 +660,8 @@ ul {
     }
 
     .work:hover {
-        width: 120%;
-        height: auto;
+        width: 100%;
+        height: 240px;
         box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
     }
 
@@ -802,10 +800,13 @@ ul {
         display: block;
         background-color: rgba(64, 132, 146);
         margin: 0;
+        padding:5px 0;
         border-top: 2.5px solid rgb(0, 0, 0);
     }
 
-
+li{
+    padding:5px 0;
+}
 
 
     .fuction-box {
@@ -869,8 +870,7 @@ ul {
     }
 
     .intr-box {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin:0 5px;
         padding: 30px 30px 50px 30px;
         background: linear-gradient(to left, #000 0%, rgb(64, 132, 146) 100%);
     }
@@ -889,8 +889,8 @@ ul {
     }
 
     .intr-icon {
-        width: 250px;
-        height: 250px;
+        width: 125px;
+        height: 125px;
         border-radius: 50%;
         box-shadow: -18px 18px 21px rgba(255, 255, 255, 0.552);
     }
@@ -935,9 +935,9 @@ ul {
 
     .intr-title {
         color: rgb(255, 255, 255);
-        width: 180px;
+        width: auto;
         font-family: 'Zen Antique', serif;
-        font-size: 30px;
+        font-size: 24px;
         letter-spacing: 10px;
         padding: 20px;
         margin-bottom: 20px;
