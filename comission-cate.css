@@ -74,14 +74,14 @@ footer {
 .logo {
     width: 200px;
     display: flex;
-    height:100px ;
+    height: 100px;
 }
 
 .fuction-box {
     background-color: rgb(64, 132, 146);
     width: 700px;
     padding-left: 20px;
-    padding-right:20px;
+    padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 10px;
     margin-top: 10px;
@@ -112,6 +112,7 @@ footer {
     letter-spacing: 10px;
     margin-left: 10px;
 }
+
 .style {
     background-color: rgba(64, 132, 146);
     margin: 60px 20px 60px 20px;
@@ -135,11 +136,11 @@ footer {
 .style-box {
     display: flex;
     flex-direction: column;
-margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .style-top {
-    background:linear-gradient(to right,rgb(0, 0, 0,80%) 0%, rgb(0, 0, 0,0) 100%);
+    background: linear-gradient(to right, rgb(0, 0, 0, 80%) 0%, rgb(0, 0, 0, 0) 100%);
 }
 
 .style-title {
@@ -160,7 +161,8 @@ margin-bottom: 60px;
     background-size: cover;
     padding: 30px;
 }
-.style-des2{
+
+.style-des2 {
     background-image: url(img/analog_3cutted.png);
     background-repeat: no-repeat;
 
@@ -168,15 +170,17 @@ margin-bottom: 60px;
     background-size: cover;
     padding: 30px;
 }
-.style-des3{
+
+.style-des3 {
     background-image: url(img/digital\(c\)_4cutted.png);
     background-repeat: no-repeat;
- 
+
     background-position: center;
     background-size: cover;
     padding: 30px;
 }
-.style-des4{
+
+.style-des4 {
     background-image: url(img/digital\(c\)_1cutted.png);
     background-repeat: no-repeat;
 
@@ -184,9 +188,10 @@ margin-bottom: 60px;
     background-size: cover;
     padding: 30px;
 }
+
 .style-des-title {
     color: rgb(64, 132, 146);
-    background-color: rgb(255, 255, 255,70%);
+    background-color: rgb(255, 255, 255, 70%);
     font-size: 150%;
     font-weight: bold;
     letter-spacing: 5px;
@@ -200,30 +205,34 @@ margin-bottom: 60px;
 }
 
 .style-des-text {
-   
+
     color: #2B586E;
     line-height: 46px;
     font-size: 125%;
     letter-spacing: 5px;
     font-weight: bold;
-    padding:15px 30px;
+    padding: 15px 30px;
     margin-bottom: 15px;
-    font-family: 'Zen Maru Gothic', sans-serif;;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    ;
 }
-.style-des-st{
 
-    color:rgb(47, 97, 107);
+.style-des-st {
+
+    color: rgb(47, 97, 107);
     font-size: 125%;
     letter-spacing: 5px;
     font-weight: bold;
-    padding:15px;
+    padding: 15px;
 }
-.text-box{
+
+.text-box {
     background-color: rgba(223, 253, 253, 0.65);
-    
-    padding:15px;
+
+    padding: 15px;
 }
-.next-outerbox{
+
+.next-outerbox {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 60px;
@@ -238,9 +247,11 @@ margin-bottom: 60px;
     justify-content: center;
     border-radius: 30px;
 }
-.next-box:hover{    
+
+.next-box:hover {
     background-color: rgb(255, 255, 255, 50%);
 }
+
 .next {
     font-size: 20px;
     font-weight: bold;
@@ -248,7 +259,587 @@ margin-bottom: 60px;
     text-decoration: none;
     color: #000000;
 }
-.next:hover{
+
+.next:hover {
     color: rgb(255, 255, 255);
 }
 
+nav {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    display: none;
+}
+
+.nav_menu {
+    display: none;
+}
+
+
+
+/*平板排版*/
+
+
+
+
+
+
+
+
+@media(max-width:768px) {
+    .container {
+        min-width: 480px;
+        background-color: rgb(255, 255, 255);
+        font-size: 12px;
+        font-family: tsukushioldmincho, 'ms mincho', 'ヒラギノ明朝 pro w3', 'hiragino mincho pro', serif;
+    }
+
+    header {
+        display: flex;
+        background-color: rgb(64, 132, 146);
+        justify-content: space-between;
+        padding: 3px 0;
+    }
+
+    footer {
+
+        padding: 10px;
+        background-color: rgba(64, 132, 146);
+    }
+
+    .footer-up {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-text-box {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        line-height: 25px;
+
+    }
+
+    .footer-text {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        letter-spacing: 10px;
+    }
+
+    .footer-icon-box {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-icon {
+        width: 50px;
+        margin: 0 20px;
+    }
+
+    .footer-under {
+        font-size: 30px;
+    }
+
+    .logo-box {
+        margin: 10px;
+        margin-left: 20px;
+    }
+
+    .logo {
+        width: 200px;
+        height: 100px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    ul {
+        list-style: none;
+        display: none;
+    }
+
+    .nav_menu {
+        display: none;
+    }
+
+
+
+    .fuction-box {
+        background-color: rgb(64, 132, 146);
+        width: 300px;
+        padding: 0;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2.5px solid #ffffff;
+    }
+
+
+    .fun-box {
+        background-color: rgb(64, 132, 146);
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fun-box:hover {
+        border-top: 2.5px solid #fff;
+    }
+
+    .fun-text {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        letter-spacing: 10px;
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+
+    .style {
+        background-color: rgba(64, 132, 146);
+        margin: 30px 10px 30px 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 30px 0 30px;
+    }
+
+    .title-box {
+        color: rgb(255, 255, 255);
+        width: auto;
+        font-family: 'Zen Antique', serif;
+        font-size: 30px;
+        letter-spacing: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+        border-left: 5px solid #fff;
+    }
+
+    .style-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .style-top {
+        background: linear-gradient(to right, rgb(0, 0, 0, 80%) 0%, rgb(0, 0, 0, 0) 100%);
+    }
+
+    .style-title {
+        color: #fff;
+        width: 180px;
+        font-size: 27px;
+        letter-spacing: 5px;
+        padding: 15px;
+        font-weight: bold;
+        font-family: 'New Tegomin', serif;
+    }
+
+    .style-des {
+        background-image: url(img/analog_4cutted.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+   
+    }
+
+    .style-des2 {
+        background-image: url(img/analog_3cutted.png);
+        background-repeat: no-repeat;
+
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+    }
+
+    .style-des3 {
+        background-image: url(img/digital\(c\)_4cutted.png);
+        background-repeat: no-repeat;
+
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+    }
+
+    .style-des4 {
+        background-image: url(img/digital\(c\)_1cutted.png);
+        background-repeat: no-repeat;
+
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+    }
+
+    .style-des-title {
+        color: rgb(64, 132, 146);
+        background-color: rgb(255, 255, 255, 70%);
+        font-size: 150%;
+        font-weight: bold;
+        letter-spacing: 5px;
+        padding: 10px;
+        width: max-content;
+        text-align: center;
+        border-left: 3px solid #000000;
+        border-right: 3px solid #000000;
+        margin-top: 30px;
+        padding-left: 15px;
+    }
+
+    .style-des-text {
+
+        color: #2B586E;
+        line-height: 30px;
+        font-size: 125%;
+        letter-spacing: 3px;
+        font-weight: bold;
+        padding: 15px 0;
+        margin-bottom: 10px;
+        font-family: 'Zen Maru Gothic', sans-serif;
+        ;
+    }
+
+    .style-des-st {
+
+        color: rgb(47, 97, 107);
+        font-size: 125%;
+        letter-spacing: 5px;
+        font-weight: bold;
+        padding: 0;
+    }
+
+    .text-box {
+        background-color: rgba(223, 253, 253, 0.65);
+
+        padding: 15px;
+    }
+
+    .next-outerbox {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 60px;
+    }
+
+    .next-box {
+        margin-top: 30px;
+        padding: 15px;
+        background-color: rgb(255, 255, 255);
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        border-radius: 30px;
+    }
+
+    .next-box:hover {
+        background-color: rgb(255, 255, 255, 50%);
+    }
+
+    .next {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .next:hover {
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+
+
+
+/*手機排版*/
+
+
+
+
+
+
+
+@media(max-width:480px) {
+    .container {
+        min-width: 300px;
+        background-color: rgb(255, 255, 255);
+        font-size: 12px;
+        font-family: tsukushioldmincho, 'ms mincho', 'ヒラギノ明朝 pro w3', 'hiragino mincho pro', serif;
+    }
+
+    header {
+        display: flex;
+        background-color: rgb(64, 132, 146);
+        justify-content: space-between;
+        padding: 3px 0;
+    }
+
+    footer {
+
+        padding: 10px;
+        background-color: rgba(64, 132, 146);
+    }
+
+    .footer-up {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-text-box {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        line-height: 25px;
+
+    }
+
+    .footer-text {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        letter-spacing: 10px;
+    }
+
+    .footer-icon-box {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-icon {
+        width: 30px;
+        margin: 0 10px;
+    }
+
+    .footer-under {
+        font-size: 20px;
+    }
+
+    .logo-box {
+        margin: 10px;
+        margin-left: 20px;
+    }
+
+    .logo {
+        width: 200px;
+        height: 100px;
+    }
+
+
+
+
+    nav {
+        display: block
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .nav_menu {
+        margin-top: 20px;
+        font-size: 4em;
+        padding: 0 15px;
+        display: block;
+        color: #fff;
+    }
+
+    .checkbox {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        background-color: rgba(64, 132, 146);
+        margin: 0;
+        padding: 5px 0;
+        border-top: 2.5px solid rgb(0, 0, 0);
+    }
+
+    li {
+        padding: 5px 0;
+    }
+
+
+    .fuction-box {
+        display: none;
+    }
+
+
+    .fun-box {
+        background-color: rgb(64, 132, 146);
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fun-box:hover {
+        border-top: 2.5px solid #fff;
+    }
+
+    .fun-text {
+        font-size: 24px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        letter-spacing: 10px;
+        margin-left: 10px;
+    }
+
+    .style {
+        background-color: rgba(64, 132, 146);
+        margin: 10px 5px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 30px 0 30px;
+    }
+
+    .title-box {
+        color: rgb(255, 255, 255);
+        width: auto;
+        font-family: 'Zen Antique', serif;
+        font-size: 24px;
+        letter-spacing: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+        border-left: 5px solid #fff;
+    }
+
+    .style-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .style-top {
+        background: linear-gradient(to right, rgb(0, 0, 0, 80%) 0%, rgb(0, 0, 0, 0) 100%);
+    }
+
+    .style-title {
+        color: #fff;
+        width: auto;
+        font-size: 20px;
+        letter-spacing: 3px;
+        padding: 10px;
+        font-weight: bold;
+        font-family: 'New Tegomin', serif;
+    }
+
+    .style-des {
+        background-image: url(img/analog_4cutted.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        padding: 10px;
+    }
+
+    .style-des2 {
+        background-image: url(img/analog_3cutted.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    .style-des3 {
+        background-image: url(img/digital\(c\)_4cutted.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    .style-des4 {
+        background-image: url(img/digital\(c\)_1cutted.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    .style-des-title {
+        color: rgb(64, 132, 146);
+        background-color: rgb(255, 255, 255, 70%);
+        font-size: 150%;
+        font-weight: bold;
+        letter-spacing: 5px;
+        padding: 5px;
+        width: max-content;
+        text-align: center;
+        border-left: 3px solid #000000;
+        border-right: 3px solid #000000;
+        margin-top: 30px;
+        padding-left: 10px;
+    }
+
+    .style-des-text {
+
+        color: #2B586E;
+        line-height: 24px;
+        font-size: 80%;
+        letter-spacing: 3px;
+        font-weight: bold;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        font-family: 'Zen Maru Gothic', sans-serif;
+        ;
+    }
+
+    .style-des-st {
+
+        color: rgb(47, 97, 107);
+        font-size: 125%;
+        letter-spacing: 5px;
+        font-weight: bold;
+        padding: 0;
+    }
+
+    .text-box {
+        background-color: rgba(223, 253, 253, 0.65);
+        padding: 15px;
+    }
+
+    .next-outerbox {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+
+    .next-box {
+        margin-top: 10px;
+        padding: 15px;
+        background-color: rgb(255, 255, 255);
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        border-radius: 30px;
+    }
+
+    .next-box:hover {
+        background-color: rgb(255, 255, 255, 50%);
+    }
+
+    .next {
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .next:hover {
+        color: rgb(255, 255, 255);
+    }
+}
