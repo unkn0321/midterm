@@ -114,6 +114,7 @@ li:hover {
     align-items: left;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
     padding: 30px 30px 50px 30px;
 }
 
@@ -128,41 +129,43 @@ li:hover {
     text-align: left;
     border-left: 5px solid #fff;
 }
-
-.card {
-    background-color: rgb(255, 255, 255);
+.card{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.card-box {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
     max-width: 800px;
 }
 
 .name-field {
     background-color: rgb(0, 0, 0);
     height:30px;
-    border-bottom:5px solid rgb(64, 132, 146);
+    border:5px solid rgb(64, 132, 146);
     font-size: 20px;
     color: aliceblue;
     width: max-content;
+    border-radius: 10px;
+    padding:10px;
 }
-
-
-.message-list {
-    display: block;
-
-}
-
 
 .message-field {
     background-color: rgb(0, 0, 0);
     height:30px;
-    border-bottom:5px solid rgb(64, 132, 146);
+    border:5px solid rgb(64, 132, 146);
     font-size: 20px;
     color: aliceblue;
-    width: auto;
+    width: max-content;
+    border-radius: 10px;
+    padding:10px;
 }
 .message-list{
     padding-left:20px;
+    display: block;
 }
 .message-item {
     display: block;
@@ -982,6 +985,77 @@ li:hover {
         padding: 5px 0;
         text-align: center;
     }
+
+    .chat-box {
+        background: linear-gradient(to left, #000 0%, rgb(64, 132, 146) 100%);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin:10px 5px;
+        padding: 30px;
+    }
+    
+    .card-header {
+        color: rgb(255, 255, 255);
+        width: auto;
+        font-family: 'Zen Antique', serif;
+        font-size: 24px;
+        letter-spacing: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+        text-align: left;
+        border-left: 5px solid #fff;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-box {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        max-width: 600px;
+    }
+    
+    .name-field {
+        background-color: rgb(0, 0, 0);
+        height:20px;
+        border:5px solid rgb(64, 132, 146);
+        font-size: 16px;
+        color: aliceblue;
+        width: max-content;
+        border-radius: 10px;
+        padding:10px;
+    }
+    
+    .message-field {
+        background-color: rgb(0, 0, 0);
+        height:20px;
+        border:5px solid rgb(64, 132, 146);
+        font-size: 16px;
+        color: aliceblue;
+        width: max-content;
+        border-radius: 10px;
+        padding:10px;
+    }
+    .message-list{
+        padding-left:10px;
+        display: block;
+    }
+    .message-item {
+        display: block;
+        font-size: 20px;
+        color: #000000;
+        text-align: left;
+        padding:3px 0;
+    }
+    .message-item:hover {
+        background-color: #74B5c2;
+    }
+
 
 
     .fuction-box {
