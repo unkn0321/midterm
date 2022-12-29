@@ -12,6 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artist's Journal</title>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-storage-compat.js"></script>
     <script src="home.js"></script>
 </head>
 
@@ -118,26 +122,28 @@
         </div>
     </div>
     <div class="s-intr-box">
-            <div class="s-intr-title">關於繪師</div>
-            <div class="s-intr-box-content">
-                <div class="s-intr-box-top">
-                    <img src="img/icon.png" alt="icon" class="s-intr-icon">
-                    <div class="s-intr-name">Noki</div>
-                </div>
-                <p class="s-intr-txt">
-                    十年以上繪圖經驗<br>
-                    有接案經歷<br>
-                    擅長多種風格
-                </p>
-                <div class="s-intr-contact-name">
-                    聯繫繪師
-                </div>
-                <div class="s-icon-box">
-                    <a href="https://www.facebook.com/no.ki.75491856/"><img src="img/facebook.png" alt="fb" class="s-icon"></a>
-                    <a href="https://www.instagram.com/nokinok_art/"><img src="img/instagram.png" alt="inst" class="s-icon"></a>
-                    <a href="https://twitter.com/noki_nok_"><img src="img/twitter.png" alt="twitter" class="s-icon"></a>
-                </div>
+        <div class="s-intr-title">關於繪師</div>
+        <div class="s-intr-box-content">
+            <div class="s-intr-box-top">
+                <img src="img/icon.png" alt="icon" class="s-intr-icon">
+                <div class="s-intr-name">Noki</div>
             </div>
+            <p class="s-intr-txt">
+                十年以上繪圖經驗<br>
+                有接案經歷<br>
+                擅長多種風格
+            </p>
+            <div class="s-intr-contact-name">
+                聯繫繪師
+            </div>
+            <div class="s-icon-box">
+                <a href="https://www.facebook.com/no.ki.75491856/"><img src="img/facebook.png" alt="fb"
+                        class="s-icon"></a>
+                <a href="https://www.instagram.com/nokinok_art/"><img src="img/instagram.png" alt="inst"
+                        class="s-icon"></a>
+                <a href="https://twitter.com/noki_nok_"><img src="img/twitter.png" alt="twitter" class="s-icon"></a>
+            </div>
+        </div>
     </div>
     <div class="work-box">
         <div class="work-title">作品展示</div>
@@ -162,7 +168,43 @@
         </div>
 
     </div>
+
+    <div class="chat-box">
+        <input type="text" class="form-control-plaintext name-field" id="name-field" placeholder="Enter a username...">
+        <div class="card-body">
+            <ul id='message-list' class="message-list"></ul>
+        </div>
+        <div class="card-footer text-muted">
+            <input type="text" class="form-control-plaintext message-field" id="message-field"
+                placeholder="Type a message...">
+        </div>
+    </div>
 </body>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyA5PNaIy5njCpYuuv9DvVUisnGQOYY68Dc",
+        authDomain: "artist-96076.firebaseapp.com",
+        projectId: "artist-96076",
+        storageBucket: "artist-96076.appspot.com",
+        messagingSenderId: "518127077873",
+        appId: "1:518127077873:web:2b52fb6a3797765b8ddc50",
+        measurementId: "G-Q9H7LF04T3"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+
 <footer>
     <div class="footer-up">
         <div class="footer-text-box">
