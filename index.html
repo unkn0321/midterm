@@ -17,19 +17,20 @@
 
 <button type="button" id="BackTop" class="toTop-arrow"></button>
 <script>
-$(function(){
-	$('#BackTop').click(function(){ 
-		$('html,body').animate({scrollTop:0}, 222);
-	});
-	$(window).scroll(function() {
-		if ( $(this).scrollTop() > 300 ){
-			$('#BackTop').fadeIn(222);
-		} else {
-			$('#BackTop').stop().fadeOut(222);
-		}
-	}).scroll();
-});
+    $(function () {
+        $('#BackTop').click(function () {
+            $('html,body').animate({ scrollTop: 0 }, 222);
+        });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('#BackTop').fadeIn(222);
+            } else {
+                $('#BackTop').stop().fadeOut(222);
+            }
+        }).scroll();
+    });
 </script>
+
 <body class="container">
     <header>
         <div class="logo-box">
@@ -115,7 +116,28 @@ $(function(){
 
             </div>
         </div>
-
+    </div>
+    <div class="s-intr-box">
+            <div class="s-intr-title">關於繪師</div>
+            <div class="s-intr-box-content">
+                <div class="s-intr-box-top">
+                    <img src="img/icon.png" alt="icon" class="s-intr-icon">
+                    <div class="s-intr-name">Noki</div>
+                </div>
+                <p class="s-intr-txt">
+                    十年以上繪圖經驗<br>
+                    有接案經歷<br>
+                    擅長多種風格
+                </p>
+                <div class="s-intr-contact-name">
+                    聯繫繪師
+                </div>
+                <div class="s-icon-box">
+                    <a href="https://www.facebook.com/no.ki.75491856/"><img src="img/facebook.png" alt="fb" class="s-icon"></a>
+                    <a href="https://www.instagram.com/nokinok_art/"><img src="img/instagram.png" alt="inst" class="s-icon"></a>
+                    <a href="https://twitter.com/noki_nok_"><img src="img/twitter.png" alt="twitter" class="s-icon"></a>
+                </div>
+            </div>
     </div>
     <div class="work-box">
         <div class="work-title">作品展示</div>
@@ -133,7 +155,7 @@ $(function(){
         </div>
         <div class="more-outerbox">
             <div class="more-box">
-                <a href="/midterm/comission-cate.html" class="more">
+                <a href="comission-cate.html" class="more">
                     了解更多→
                 </a>
             </div>
