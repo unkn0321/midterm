@@ -277,6 +277,15 @@ ul {
     display: none;
 }
 
+li {
+    text-align: center;
+    display: none;
+}
+
+li:hover {
+    background-color: rgb(0, 0, 0);
+}
+
 .toTop-arrow {
 	width: 3.5rem;
 	height: 3.5rem;
@@ -729,7 +738,9 @@ ul {
     }
 
     li {
+        display: block;
         padding: 5px 0;
+        text-align: center;
     }
 
 
