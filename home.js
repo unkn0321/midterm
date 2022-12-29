@@ -3,9 +3,11 @@ $(document).ready(function () {
     $(".nav_menu").click(function () {
         $(".menu").slideToggle(500);
     });
+    let $title = $('#title');
     firebase.initializeApp({
         apiKey: "AIzaSyA5PNaIy5njCpYuuv9DvVUisnGQOYY68Dc",
         authDomain: "artist-96076.firebaseapp.com",
+        databaseURL:"http://artist-96076.firebaseio.com",
         projectId: "artist-96076",
         storageBucket: "artist-96076.appspot.com",
         messagingSenderId: "518127077873",
@@ -13,14 +15,14 @@ $(document).ready(function () {
         measurementId: "G-Q9H7LF04T3"
     });
     let chatroomDocRef = firebase.firestore()
-        .collection()
+        .collection("chatrooms")
         .doc("chatroom1");
     let messagesCollectionRef=chatroomDocRef.collection("messages");
     const $messageField = $('#message-field');
     const $nameField = $('#name-field');
     const $messageList = $('#message-list');
     $messageField.keypress(function (e) {
-        if (e.keycode == 13) {
+        if (e.keyCode == 13) {
 
             let senderName = $nameField.val();
             let message = $messageField.val();
@@ -34,8 +36,8 @@ $(document).ready(function () {
         }
     });
     
-    let queryMessagesColletionRef = messagesCollectionRef.orderBy("timeStamp","asc");
-    queryMessagesColletionRef.onSnapshot(function(querySnapshot){
+    let queryMessagesCollectionRef = messagesCollectionRef.orderBy("timeStamp","asc");
+    queryMessagesCollectionRef.onSnapshot(function(querySnapshot){
         $messageList.html("");
 
         querySnapshot.forEach(function(doc){
@@ -48,7 +50,7 @@ $(document).ready(function () {
             </li>
             `;
             $messageList.append(messageItem);
-        })
-        $messageList[0].scrollTop=$messageList[0].scrollHeight;
-    })
+        });
+        $messageList[0].scrollTop = $messageList[0].scrollHeight;
+    });
 });
