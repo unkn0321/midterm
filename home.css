@@ -92,7 +92,18 @@ ul {
     display: none;
 }
 
+li {
+    text-align: center;
+    display: none;
+}
 
+li:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.menu {
+    display: none;
+}
 
 
 
@@ -134,11 +145,9 @@ ul {
 }
 
 .Bulletin-Board-box {
-
     margin-left: 20px;
     margin-right: 20px;
     padding: 20px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,7 +187,6 @@ ul {
 }
 
 .intr-box-content {
-
     display: flex;
     justify-content: space-between;
 }
@@ -286,6 +294,10 @@ ul {
     box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
 }
 
+.s-intr-box {
+    display: none;
+}
+
 .work-box {
     margin: 60px 20px;
     padding: 30px 30px 30px 30px;
@@ -358,37 +370,44 @@ ul {
 }
 
 .toTop-arrow {
-	width: 3.5rem;
-	height: 3.5rem;
-	padding: 0;
-	margin: 0;
-	border: 0;
-	border-radius: 33%;
-	opacity: 0.6;
-	background: #000;
-	cursor: pointer;
-	position:fixed;
-	right: 1rem;
-	bottom: 1rem;
-	display: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 33%;
+    opacity: 0.6;
+    background: #000;
+    cursor: pointer;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
 }
-.toTop-arrow::before, .toTop-arrow::after {
-	width: 31px;
-	height: 7px;
-	border-radius: 3px;
-	background: rgba(64, 132, 146);
-	position: absolute;
-	content: "";
-}
-.toTop-arrow::before {
-	transform: rotate(-45deg) translate(0, -50%);
-	left: 0.4rem;
-}
+
+.toTop-arrow::before,
 .toTop-arrow::after {
-	transform: rotate(45deg) translate(0, -50%);
-	right: 0.4rem;
+    width: 31px;
+    height: 7px;
+    border-radius: 3px;
+    background: rgba(64, 132, 146);
+    position: absolute;
+    content: "";
 }
-.toTop-arrow:focus {outline: none;}
+
+.toTop-arrow::before {
+    transform: rotate(-45deg) translate(0, -50%);
+    left: 0.4rem;
+}
+
+.toTop-arrow::after {
+    transform: rotate(45deg) translate(0, -50%);
+    right: 0.4rem;
+}
+
+.toTop-arrow:focus {
+    outline: none;
+}
 
 
 
@@ -474,11 +493,16 @@ ul {
         list-style: none;
         display: none;
     }
-
+li{
+    display: none;
+}
     .nav_menu {
         display: none;
     }
 
+    .menu {
+        display: none;
+    }
 
 
     .fuction-box {
@@ -656,6 +680,10 @@ ul {
         box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
     }
 
+    .s-intr-box {
+        display: none;
+    }
+
     .work-box {
         margin: 60px 20px;
         padding: 30px 30px 30px 30px;
@@ -688,6 +716,7 @@ ul {
         width: 100%;
         transition-duration: 0.5s;
         height: 200px;
+        margin-bottom: 20px;
     }
 
     .work:hover {
@@ -726,6 +755,7 @@ ul {
     .more:hover {
         color: rgb(255, 255, 255);
     }
+
     .toTop-arrow {
         width: 3rem;
         height: 3rem;
@@ -736,12 +766,14 @@ ul {
         opacity: 0.6;
         background: #000;
         cursor: pointer;
-        position:fixed;
+        position: fixed;
         right: 1rem;
         bottom: 1rem;
         display: none;
     }
-    .toTop-arrow::before, .toTop-arrow::after {
+
+    .toTop-arrow::before,
+    .toTop-arrow::after {
         width: 25px;
         height: 6px;
         border-radius: 3px;
@@ -749,15 +781,20 @@ ul {
         position: absolute;
         content: "";
     }
+
     .toTop-arrow::before {
         transform: rotate(-45deg) translate(0, -50%);
         left: 0.42rem;
     }
+
     .toTop-arrow::after {
         transform: rotate(45deg) translate(0, -50%);
         right: 0.42rem;
     }
-    .toTop-arrow:focus {outline: none;}
+
+    .toTop-arrow:focus {
+        outline: none;
+    }
 
 }
 
@@ -862,15 +899,17 @@ ul {
     }
 
     .menu {
-        display: block;
+        display: none;
         background-color: rgba(64, 132, 146);
         margin: 0;
-        padding: 5px 0;
-        border-top: 2.5px solid rgb(0, 0, 0);
+        padding: 0;
+        border-top: 2px solid rgb(0, 0, 0);
     }
 
     li {
+        display: block;
         padding: 5px 0;
+        text-align: center;
     }
 
 
@@ -935,103 +974,101 @@ ul {
     }
 
     .intr-box {
-        margin: 0 5px;
-        padding: 30px 30px 50px 30px;
-        background: linear-gradient(to left, #000 0%, rgb(64, 132, 146) 100%);
+        display: none;
     }
 
-    .intr-box-content {
 
+
+    .s-intr-box {
+        display: block;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        margin: 10px 5px;
+        padding: 30px 30px 30px 30px;
+        background: linear-gradient(to right, #000 0%, rgb(64, 132, 146) 100%);
     }
 
-    .intr-box-left {
-        margin-left: 20px;
-        padding: 30px 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .intr-icon {
-        width: 125px;
-        height: 125px;
-        border-radius: 50%;
-        box-shadow: -18px 18px 21px rgba(255, 255, 255, 0.552);
-    }
-
-    .intr-box-right {
-        text-align: left;
-    }
-
-    .intr-name {
-        font-size: 64px;
-        letter-spacing: 10px;
-        padding: 20px;
+    .s-intr-title {
+        color: rgb(255, 255, 255);
+        width: 180px;
+        font-family: 'Zen Antique', serif;
+        font-size: 24px;
+        letter-spacing: 8px;
+        padding: 10px;
         margin-bottom: 20px;
         text-align: left;
+        border-left: 4px solid #fff;
+    }
+
+    .s-intr-box-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .s-intr-box-top {
+        display: flex;
+    }
+
+    .s-intr-icon {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        box-shadow: -12px 12px 14px rgba(255, 255, 255, 0.552);
+    }
+
+    .s-intr-name {
+        color: #ffffff;
+        font-family: 'Zen Maru Gothic', sans-serif;
+        font-size: 64px;
+        letter-spacing: 10px;
+        padding-left: 30px;
+        margin-bottom: 20px;
         font-weight: bold;
     }
 
-    .intr-txt {
-        font-size: 20px;
-        letter-spacing: 10px;
-        padding: 10px;
+    .s-intr-txt {
+        color: #ffffff;
+        font-family: 'Zen Maru Gothic', sans-serif;
+        font-size: 18px;
+        letter-spacing: 8px;
         margin-bottom: 20px;
+        margin-right: 50px;
+        text-align: left;
     }
 
-    .intr-box-rightunder {
-        display: flex;
-        justify-content: space-around;
-        padding-top: 100px;
-
-    }
-
-    .intr-contact-name {
-        margin-left: 200px;
+    .s-intr-contact-name {
         color: #fff;
         font-size: 24px;
         letter-spacing: 5px;
-        padding: 30px;
+        padding: 10px;
+        margin-top: 20px;
         font-weight: bold;
-        text-align: center;
         vertical-align: middle;
     }
 
-    .intr-title {
-        color: rgb(255, 255, 255);
-        width: auto;
-        font-family: 'Zen Antique', serif;
-        font-size: 24px;
-        letter-spacing: 10px;
-        padding: 20px;
-        margin-bottom: 20px;
-        text-align: left;
-        border-left: 5px solid #fff;
-    }
-
-    .contact-box {
+    .s-icon-box {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        border-bottom: 2.5px solid #fff;
+        
     }
 
-
-    .icon {
+    .s-icon {
         background-color: #ffffff;
-        width: 50px;
-        margin: 10px 20px;
+        width: 30px;
+        margin: 0 15px;
         border: 2px solid #ffffff;
         padding: 5px;
         border-radius: 50%;
         transition-duration: 0.5s;
     }
 
-    .icon:hover {
+    .s-icon:hover {
         margin: 0 20px 20px 20px;
         box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
     }
+
 
     .work-box {
         margin: 10px 5px;
@@ -1042,14 +1079,15 @@ ul {
 
     .work-title {
         color: rgb(255, 255, 255);
-        width: 180px;
+        width: auto;
         font-family: 'Zen Antique', serif;
         font-size: 24px;
-        letter-spacing: 10px;
-        padding: 20px;
+        letter-spacing: 8px;
+        padding: 10px;
         margin-bottom: 20px;
         text-align: left;
-        border-left: 5px solid #fff;
+        border-left: 4px solid #fff;
+
     }
 
     .work-box-box {
@@ -1065,11 +1103,12 @@ ul {
         width: 200px;
         transition-duration: 0.5s;
         height: auto;
+        margin-bottom: 20px;
     }
 
     .work:hover {
-        width: 200px;
-        height: 290px;
+        width: 220px;
+        height: auto;
         box-shadow: 0px 0px 21px 21px rgba(255, 255, 255, 0.552);
     }
 
@@ -1103,7 +1142,7 @@ ul {
     .more:hover {
         color: rgb(255, 255, 255);
     }
-    
+
     .toTop-arrow {
         width: 2.5rem;
         height: 2.5rem;
@@ -1114,12 +1153,14 @@ ul {
         opacity: 0.6;
         background: #000;
         cursor: pointer;
-        position:fixed;
+        position: fixed;
         right: 1rem;
         bottom: 1rem;
         display: none;
     }
-    .toTop-arrow::before, .toTop-arrow::after {
+
+    .toTop-arrow::before,
+    .toTop-arrow::after {
         width: 18px;
         height: 5px;
         border-radius: 3px;
@@ -1127,14 +1168,19 @@ ul {
         position: absolute;
         content: "";
     }
+
     .toTop-arrow::before {
         transform: rotate(-45deg) translate(0, -50%);
         left: 0.5rem;
     }
+
     .toTop-arrow::after {
         transform: rotate(45deg) translate(0, -50%);
         right: 0.5rem;
     }
-    .toTop-arrow:focus {outline: none;}
+
+    .toTop-arrow:focus {
+        outline: none;
+    }
 
 }
