@@ -91,8 +91,13 @@ ul {
     display: none;
 }
 
-.checkbox {
+li {
+    text-align: center;
     display: none;
+}
+
+li:hover {
+    background-color: rgb(0, 0, 0);
 }
 
 
@@ -630,7 +635,7 @@ ul {
         display: block;
         color: #fff;
     }
-    
+
     .menu {
         display: block;
         background-color: rgba(64, 132, 146);
@@ -640,7 +645,9 @@ ul {
     }
 
     li {
+        display: block;
         padding: 5px 0;
+        text-align: center;
     }
 
 
@@ -757,7 +764,7 @@ ul {
         padding: 15px;
         background-color: rgb(64, 132, 146);
         margin-right: 20px;
-        width: 100px;
+        min-width: 80px;
         display: flex;
         justify-content: center;
         border-radius: 50px;
